@@ -219,8 +219,8 @@ padding-top: 94px;
 }
 .work-list-item:hover,
 .work-list-item:focus {
-    border: 1px solid #EEEEEE;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -412,35 +412,26 @@ footer {
 }
 
 .main-section .container {
-    /* outline: 2px solid salmon; */
+    
     text-align: center;
-    padding-bottom: 200px;
-    padding-top: 200px;
 }
 
 .main-section {
-   
-}
-/* Фон на весь блок */
-
-.overlay {
-    height: 600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(
-    to right,
-   rgba(0, 0, 0, 0.25),
-   rgba(0, 0, 0, 0.25)),
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)),
     url("../css/images/overlay-img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--bcg-section-color);
-    border: 1px solid #000000;
-    
-
 }
+
 
 .button-order {
     display: inline-block;
@@ -650,7 +641,8 @@ background-color: var(--bcg-accent-color);
 .team-list .social-icon {
 fill: currentColor;
 }
-.team-list .media-links:hover .social-icon {
+.team-list .media-links:hover .social-icon,
+.team-list .media-links:focus .social-icon {
     fill: var(--section-text-color);
 }
 /* Постійні клієнти */
@@ -669,7 +661,7 @@ margin-bottom: 50px;
     display: flex;
 }
 .company-icon {
-    fill: var(--icons-color);
+    fill: currentColor;
     
 }
 .company-link {
@@ -680,6 +672,7 @@ margin-bottom: 50px;
     display: block;
     width: 170px;
     height: 92px;
+    color: var(--icons-color);
 }
 .list-company {
     margin-right: 30px;
@@ -691,6 +684,7 @@ margin-bottom: 50px;
 .company-link:hover,
 .company-link:focus {
 border: 1px solid var(--bcg-accent-color);
+color: var(--bcg-accent-color);
 }
 .company-link:hover .company-icon {
     fill: var(--bcg-accent-color);
